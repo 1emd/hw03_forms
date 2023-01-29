@@ -9,4 +9,5 @@
 </ul>      
 <p>
   {{ post.text|linebreaksbr }}
+  <a href="{% url 'posts:post_detail' post.id %}">подробная информация </a>
 </p>
