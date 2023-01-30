@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib.auth import get_user_model
 
 
+LIMIT = 100
+
 User = get_user_model()
 
 
@@ -27,7 +29,7 @@ class Post(models.Model):
     )
 
     def __str__(self):
-        return self.text[:100]
+        return self.text[:LIMIT]
 
     class Meta:
         ordering = ('-pub_date',)

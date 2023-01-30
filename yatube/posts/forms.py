@@ -12,9 +12,3 @@ class PostForm(forms.ModelForm):
             'text': ('Введите текст'),
             'group': ('Выберете группу'),
         }
-
-    def clean_text(self):
-        data = self.cleaned_data['text']
-        if '' not in data.lower():
-            raise forms.ValidationError('Вы должны написать!')
-        return data
