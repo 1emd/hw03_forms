@@ -42,8 +42,8 @@
 
 ### Технологии:
 
-Python 3.9
-Django 2.2.9
+- Python 3.9
+- Django 2.2.9
 
 ### Автор:
 [Кирилл Хорошилов](https://github.com/1emd)
