@@ -1,3 +1,49 @@
 # backend_community_homework
 
-[![CI](https://github.com/yandex-praktikum/hw03_forms/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/yandex-praktikum/hw03_forms/actions/workflows/python-app.yml)
+### Описание:
+Третий проект для блога-платформы «Социальная сеть блогеров». Были добавлены следующие возможности: регистрация пользователя, вход/выход пользователя, восстановление пароля. Теперь пользователи могут создавать записи в сообществе и редактировать только свои собственные записи. Также предоставляется подробная информация о пользователях и их профилях. Посты пользователей отображаются с использованием пагинации. В дополнение к этому, добавлены разделы "Об авторе" и "Технологии".
+
+### Технологии:
+
+- Python 3.9 
+- Django 2.2 
+
+### Инструкция по установке:
+
+1. Клонируйте репозиторий и перейдите в него в командной строке:
+  ```
+  git clone git@github.com:1emd/hw03_forms.git
+  cd hw02_community
+  ```
+2. Создайте и активируйте виртуальное окружение:
+  ```
+  python3 -m venv venv
+  ```
+- Linux/macOS:
+
+  ```
+  source venv/bin/activate
+  ```
+
+- Windows:
+  ```
+  source env/scripts/activate
+  ```
+
+3. Установите зависимости из файла requirements.txt:
+  ```
+  pip install -r requirements.txt
+  ```
+
+4. Выполните миграции:
+  ```
+  python3 manage.py migrate
+  ```
+
+5. Запустите проект:
+  ```
+  python3 manage.py runserver
+  ```
+
+### Автор:
+[Кирилл Хорошилов](https://github.com/1emd)
